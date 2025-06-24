@@ -116,13 +116,14 @@ app.title("TTEncry")
 app.geometry("900x700")
 if sys.platform.startswith('win'):
     try:
-        icon_path = os.path.abspath("logo.ico")
+        icon_path = os.path.abspath("logo.png")
         icon_image = tk.PhotoImage(file=icon_path)
         app.wm_iconbitmap(icon_path)
     except Exception as e:
-        print(f"Icon error: {e}")
+        print(f"Icon error: {e}\nKanker wm_iconbitmap kan Logo.ico niet lezen omdat windows kenker is.\nLove Linux")
 else:
     print("Fuck Linux")
+
 
 canvas = ctk.CTkCanvas(app, bg="#0a0a0a", highlightthickness=0)
 canvas.place(relx=0, rely=0, relwidth=1, relheight=1)
@@ -138,7 +139,7 @@ def create_stars():
     for _ in range(100):
         x = random.randint(0, width)
         y = random.randint(0, height)
-        size = random.choice([1, 2])
+        size = random.choice([0.5, 3])
         speed = random.uniform(0.5, 1.5)
         star = canvas.create_oval(x, y, x+size, y+size, fill="white", outline="")
         stars.append({"id": star, "x": x, "y": y, "speed": speed, "size": size})
