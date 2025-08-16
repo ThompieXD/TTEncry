@@ -1,5 +1,5 @@
 # TTEncry
-# *Suck me*
+# *Tien Tepel Encryptor*
 Zoek **__JIJ__** naar ultieme dick stimulatie?
 Zoek **__JIJ__** naar ontmaagding?
 **DAN IS DIT HET PROGRAMMA VOOR JOUW!**
